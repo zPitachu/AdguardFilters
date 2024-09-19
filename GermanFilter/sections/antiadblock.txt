@@ -497,8 +497,6 @@ zeit.de,teltarif.de#@#.-advertsSidebar
 !+ NOT_OPTIMIZED
 @@||minecraft-serverlist.net^$generichide
 !+ NOT_OPTIMIZED
-@@||morgenpost.de^$generichide
-!+ NOT_OPTIMIZED
 @@||motor-talk.de^$generichide
 !+ NOT_OPTIMIZED
 @@||motorbasar.de^$generichide
@@ -961,6 +959,9 @@ schnittmuster-datenbank.de#%#//scriptlet("abort-on-property-read", "adsBlocked")
 !#endif
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/189027
+xup.in#%#//scriptlet('set-constant', 'zshowabx', 'noopFunc')
+xup.in##body div#xupabx
 ! 4p.de - adblock push
 4p.de#@#.AdSense
 ! https://github.com/AdguardTeam/AdguardFilters/issues/175551

@@ -22,6 +22,8 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/188784
+@@hls/player$stealth=referrer,xmlhttprequest,domain=sportshub.to
 ! dizipal*.com - frequently changed domains
 ! https://x.com/dizipalSx
 ! aglint-disable-next-line invalid-modifiers
@@ -2528,6 +2530,11 @@
 ! https://github.com/AdguardTeam/CoreLibs/issues/1645 [Stealth Mode - Protect from DPI]
 !#if (adguard_app_windows || adguard_app_mac || adguard_app_android)
 !
+@@||evkur.com.tr^$stealth=dpi
+@@||civilservicejobs.service.gov.uk^$stealth=dpi
+@@||pttcell.com.tr^$stealth=dpi
+@@||turktelekom.com.tr^$stealth=dpi
+@@||desu.shikimori.one^$stealth=dpi
 @@||mvz.hufeland.de^$stealth=dpi
 @@||aquarium.co.jp^$stealth=dpi
 @@||hikari.faq.rakuten.net^$stealth=dpi

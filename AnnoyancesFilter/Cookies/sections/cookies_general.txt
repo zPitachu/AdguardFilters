@@ -11,6 +11,7 @@
 !#######################################################
 ! SECTION: Cookies - General element hiding
 !
+###aviso-cookies
 ##.glue-cookie-notification-bar
 ##.amdb-lgpd-consent
 ##.cb01-cookie-bar
@@ -1643,6 +1644,7 @@
 !
 ! SECTION: Cookies - General URL
 !
+||modeto.com^$third-party
 ||kvksis.com^$third-party
 ||cloudlog.ch/cloudlog/cookie/public/app.js
 ||hrabos-gdpr.aira.cz^

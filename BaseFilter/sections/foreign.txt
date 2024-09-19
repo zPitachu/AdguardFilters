@@ -220,9 +220,9 @@ reviewpalace.net,techplanet.cam,techland.live,gameplanet.cam,topgames.cam,techso
 reviewpalace.net,techplanet.cam,techland.live,gameplanet.cam,topgames.cam,techsoul.cam,gamehub.cam,gameland.click,gamestation.cam,gamezone.cam,gamesera.online,free-games.cam,top-games.live,gulftech.live,reviewhub.vip,reviewtech.me,pcreview.me##div[class^="rts"][class*="-urts"]
 reviewpalace.net,techplanet.cam,techland.live,gameplanet.cam,topgames.cam,techsoul.cam,gamehub.cam,gameland.click,gamestation.cam,gamezone.cam,gamesera.online,free-games.cam,top-games.live,gulftech.live,reviewhub.vip,reviewtech.me,pcreview.me##div[class^="dr"][class*="-udr"]
 reviewpalace.net,techplanet.cam,techland.live,gameplanet.cam,topgames.cam,techsoul.cam,gamehub.cam,gameland.click,gamestation.cam,gamezone.cam,gamesera.online,free-games.cam,top-games.live,gulftech.live,reviewhub.vip,reviewtech.me,pcreview.me##body > div[class^="content"][class*="-block"]
-reviewpalace.net,techplanet.cam,techland.live,gameplanet.cam,topgames.cam,techsoul.cam,gamehub.cam,gameland.click,gamestation.cam,gamezone.cam,gamesera.online,free-games.cam,top-games.live,gulftech.live,reviewhub.vip,reviewtech.me,pcreview.me#%#//scriptlet('prevent-element-src-loading', 'script', '/profitsence\.com|pagead2\.googlesyndication\.com|doubleclick\.net/')
+reviewpalace.net,techplanet.cam,techland.live,gameplanet.cam,topgames.cam,techsoul.cam,gamehub.cam,gameland.click,gamestation.cam,gamezone.cam,gamesera.online,free-games.cam,top-games.live,gulftech.live,reviewhub.vip,reviewtech.me,pcreview.me#%#//scriptlet('prevent-element-src-loading', 'script', '/profitsence\.com|pagead2\.googlesyndication\.com|doubleclick\.net|headerbidding\.ai/')
 reviewpalace.net,techplanet.cam,techland.live,gameplanet.cam,topgames.cam,techsoul.cam,gamehub.cam,gameland.click,gamestation.cam,gamezone.cam,gamesera.online,free-games.cam,top-games.live,gulftech.live,reviewhub.vip,reviewtech.me,pcreview.me#%#//scriptlet('prevent-fetch', 'method:HEAD')
-reviewpalace.net,techplanet.cam,techland.live,gameplanet.cam,topgames.cam,techsoul.cam,gamehub.cam,gameland.click,gamestation.cam,gamezone.cam,gamesera.online,free-games.cam,top-games.live,gulftech.live,reviewhub.vip,reviewtech.me,pcreview.me#%#//scriptlet('prevent-setTimeout', '/new Request[\s\S]*?Promise\.all[\s\S]*?\.status|function _0x/')
+reviewpalace.net,techplanet.cam,techland.live,gameplanet.cam,topgames.cam,techsoul.cam,gamehub.cam,gameland.click,gamestation.cam,gamezone.cam,gamesera.online,free-games.cam,top-games.live,gulftech.live,reviewhub.vip,reviewtech.me,pcreview.me#%#//scriptlet('prevent-setTimeout', '/new Request[\s\S]*?Promise\.all[\s\S]*?\.status|function _0x|\.onerror/')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/139730
 arabic-toons.com###ads-blocked
 arabic-toons.com#%#//scriptlet('abort-on-property-read', 'adsBlocked')
@@ -1265,6 +1265,7 @@ mob.hr##.side_banner
 !---------------------------------------------------------------------
 ! NOTE: Czech and Slovakian
 !
+jablickar.cz#$?#a[id^="branding"] { remove: true; }
 rychlost.cz##.t-info-ban
 rychlost.cz##.t-info-ban + div[style]
 extra.cz##[data-advert-container]
@@ -4466,6 +4467,10 @@ smellyfisher.com##.providers
 bestmovie.it,treccani.it##.gmp
 forum.fibra.click##.FibraClickAds-fake-poststream-item
 open.online##a[rel="sponsored"]
+! https://github.com/AdguardTeam/AdguardFilters/issues/188802
+tv8.it##main div[type="atf-btf"]
+! https://github.com/AdguardTeam/AdguardFilters/issues/188839
+sport.sky.it##.advContainer
 ! https://github.com/AdguardTeam/AdguardFilters/issues/185324
 unionesarda.it#%#//scriptlet('trusted-set-constant', 'videojs', '{"log":{}}')
 unionesarda.it#%#//scriptlet('set-constant', 'videojs.log.level', 'noopFunc')
@@ -4928,7 +4933,7 @@ timgate.it###adv
 piacenza24.eu##a.gofollow[data-track]
 ||piacenza24.eu/wp-content/uploads/*/BANNER*.gif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120200
-tecnoandroid.it#%#//scriptlet("set-constant", "td_ad_background_click_link", "undefined")
+tecnoandroid.it#%#//scriptlet('set-constant', 'td_ad_background_click_link', 'undefined')
 tecnoandroid.it#$#body.td-background-link { cursor: auto !important; }
 ||tecnoandroid.it/wp-content/uploads/*/vivo
 ! https://github.com/AdguardTeam/AdguardFilters/issues/165452
@@ -4993,7 +4998,7 @@ ludicer.it#%#//scriptlet("prevent-setTimeout", "document.body.innerHTML")
 gizchina.it##.backstretch
 ||gizchina.it/wp-content/uploads/*/*/skin-zte-esterno.jpg
 gizchina.it#$#body.td-background-link { cursor: auto !important; }
-gizchina.it#%#//scriptlet("set-constant", "td_ad_background_click_link", "undefined")
+gizchina.it#%#//scriptlet('set-constant', 'td_ad_background_click_link', 'undefined')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/98964
 ||igizmo.it/wp-content/uploads/*/*/TOP-SKIN-1920x90-1.jpg
 igizmo.it##body > a[href^="https://igizmo.it/linkto/"][target="_blank"] > img
@@ -6026,6 +6031,8 @@ annapurnapost.com##.sticky-footer
 !---------------------------------------------------------------------
 ! NOTE: Norwegian
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/188809
+dagens.no##.column > div[data-type="generic-widget"]:has(> div.group > div.code-element > a[href^="https://www.partner-ads.com/"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/175518
 gamer.no#%#//scriptlet('set-constant', 'ads', 'emptyObj')
 gamer.no##.container > div[class]:has(> [data-size-mapping="toppbanner"])
@@ -9014,6 +9021,7 @@ vibefm.pl,poradnikzdrowie.pl,radioplus.pl,urzadzamy.pl,radiosupernova.pl,voxfm.p
 ! portalwrc.pl - ads
 portalwrc.pl##.gAds-content
 portalwrc.pl##img[src^="/images/reklama/"]
+||portalwrc.pl/images/dodaj/reklama_bok2.jpg
 ! sinoptik.pl - ads
 !+ NOT_PLATFORM(windows, mac, android, ext_ff)
 sinoptik.pl##cv > .sl0
@@ -11767,6 +11775,8 @@ asilmedia.org###banner
 !---------------------------------------------------------------------
 ! NOTE: Vietnamese
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/188938
+||phimmoisz.org/wp-content/uploads/tvc/*.xml
 ! https://github.com/AdguardTeam/AdguardFilters/issues/187670
 live2.thapcam24.net##.match > div.modal:has(a[href^="/go?url"])
 live2.thapcam24.net##.bg-overlay
@@ -12618,41 +12628,6 @@ truyenqqhot.com##div[id^="ads_"]
 !---------------------------------------------------------------------
 ! SECTION: Fixing other filters
 ! AdGuard platforms related only
-!
-!---------------------------------------------------------------------
-!------------------------------ Fanboy Annoyances --------------------
-!---------------------------------------------------------------------
-! NOTE: Fanboy Annoyances
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/89226
-!+ NOT_OPTIMIZED PLATFORM(android)
-@@||s-cdn.phonearena.com?b=css&*,versions/widgets/back-to-top.css
-! https://github.com/AdguardTeam/AdguardFilters/issues/85165
-!+ PLATFORM(ios, ext_safari)
-@@||gdpr.internetbrands.com/v2/ibccm.min.js
-! https://github.com/AdguardTeam/AdguardFilters/issues/60791#issuecomment-708859023
-!+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
-@@||images-na.ssl-images-amazon.com/images/*/transparent-pixel.$image,domain=amazon.in
-! https://github.com/AdguardTeam/AdguardFilters/issues/69090
-! It's caused by Fanboy's Annoyances filter and it's also fixed there, but fix doesn't work with apps
-!+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
-@@||s-cdn.phonearena.com?b=*/back-to-top$stylesheet,script
-! https://github.com/AdguardTeam/AdguardFilters/issues/67672
-!+ PLATFORM(ios, ext_safari)
-@@||phonearena.com/?b=
-!
-@@||facebook.com/share/share_now_menu/$domain=facebook.com
-!---------------------------------------------------------------------
-!------------------------------ EasyPrivacy --------------------------
-!---------------------------------------------------------------------
-! NOTE: EasyPrivacy
-!
-!#if (adguard_ext_safari || adguard_app_ios)
-!#safari_cb_affinity(privacy)
-! https://github.com/AdguardTeam/AdguardFilters/issues/65195
-@@||purolator.com/*/shipping/tracker?
-!#safari_cb_affinity
-!#endif
 !
 ! NOTE: Fixing other filters end ⬆️
 ! !SECTION: Fixing other filters

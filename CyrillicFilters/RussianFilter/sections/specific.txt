@@ -12,6 +12,12 @@ ysia.ru,5koleso.ru,ngs.ru,i38.ru,chita.ru,lenta.ru,motor.ru,progorod58.ru,74.ru,
 !
 !
 !
+interfax.ru##.toplogo__advertisement-wrap
+kommersant.ru##.main_header__important_logo > a[href][target="_blank"]
+cq.ru#%#//scriptlet("set-constant", "adbadig", "noopFunc")
+test-front.mangalib.me,ranobelib.me,anilib.me##.k7_cu
+in-poland.com##.adsContainer
+.gif$domain=probiv.store
 food.ru##div[class^="rightsideBannersBlock_"]
 cnews.ru##.objects_row > div.cnb-zone:has(> a:not([href*="cnews.ru"]))
 cnews.ru##.token-info
@@ -4358,7 +4364,6 @@ share-wood.pro,sharewood.pro###banner-message
 ||sosulki.net/*/click-fon.js
 alau.kz,1informer.com##.backstretch
 gazeta-unp.ru,dirklinik.ru##.topAdvertize
-.gif$third-party,domain=darkmoney.de
 ||assiatv.com/css/fram.js
 mogilev.online##.brand-site
 tarkov-market.com##.ads-horiz
@@ -10021,7 +10026,7 @@ l2top.ru##a[onclick^="this.href=atob"]
 ! anistar.org
 astar.bz,anistar.org,online-star.org##iframe[src="/adblock/banner_top_rand.php"]
 astar.bz,anistar.org,online-star.org###dle-content > div[align="center"] > iframe
-astar.bz,anistar.org,online-star.org#?##dle-content > div.news:has(> div.news_header > div.title_left > a[href]:contains(/(Betchaser|казино)|хентай игру|спонсоров|^БЕСПЛАТНОЕ ОБСЛУЖИВАНИЕ КАРТЫ|\sИГРУ\s|\sодежду\s/))
+astar.bz,anistar.org,online-star.org#?##dle-content > div.news:has(> div.news_header > div.title_left > a[href]:contains(/(Betchaser|казино)|хентай игру|спонсоров|^БЕСПЛАТНОЕ ОБСЛУЖИВАНИЕ КАРТЫ|\sИГРУ\s|\sодежду\s|аниме\sигра/))
 astar.bz,anistar.org,online-star.org#?##dle-content > div.news:has(> div.news_header > div.title_left > p.tags:has(a:contains(Новости сайта)))
 astar.bz,anistar.org,online-star.org##a[onclick^="if(typeof yaCounter"]
 astar.bz,anistar.org,online-star.org##a[href^="https://r.advg.agency/"]

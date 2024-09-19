@@ -24,6 +24,13 @@ modsforwot.ru,vargr.ru,trialkeys.ru#@#img[width="728"][height="90"]
 !#endif
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/188538
+in-poland.com#%#//scriptlet('set-constant', 'adsenseIsLoaded', 'true')
+!#if (adguard_app_ios || adguard_ext_android_cb)
+in-poland.com#@#ins.adsbygoogle[data-ad-slot]
+in-poland.com#@#ins.adsbygoogle[data-ad-client]
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=in-poland.com
+!#endif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/187353
 anime-bit.ru##body div#header:has(> a[href] > #ad_head)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/185817
@@ -168,9 +175,8 @@ docs-python.ru#$#pre { color: #212529 !important; user-select: text !important; 
 yvid.ru#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 !+ PLATFORM(ios, ext_android_cb)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=yvid.ru
-! https://github.com/AdguardTeam/AdguardFilters/issues/187478
 ! https://github.com/AdguardTeam/AdguardFilters/issues/187471
-cont.ws,sdamgia.ru,gorodrabot.by#%#//scriptlet('abort-on-stack-trace', 'Promise', 'loadAdvManager')
+cont.ws,gorodrabot.by#%#//scriptlet('abort-on-stack-trace', 'Promise', 'loadAdvManager')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/127540
 @@||cdnneedtv.ru/spor/jquerymin18.js$domain=cdnneedtv.ru
 sweet-tv.net,cdnneedtv.ru#%#//scriptlet('set-constant', 'canRunAds', 'true')
@@ -943,14 +949,13 @@ dzen.ru#?#div[class*="_yandexSearchContainer-"] ~ div[class][id] > div[id] > div
 [$path=/^\/$|\/\?/]dzen.ru###ya-dist
 dzen.ru##div[class^="dzen-desktop__widgetContainer-"] div[class*=" dzen-desktop__"] > div[style^="padding-top:"]
 ://dzen.ru^$cookie=rec-tech
-! Empty blocks in the feed
-dzen.ru##div[class*="__isNewGridFloors"] > article._full-height[aria-label] + article:not(article._full-height):not([aria-label])
+! Banners in the feed
+dzen.ru##.dzen-feed__item article[aria-label="Карточка этажа"] ~ article:not([aria-label="Карточка этажа"])
 !
 ! Dzen News
 dzen.ru##div[class^="BrandingAdvert"]
 dzen.ru##.news-mt-advert
 dzen.ru##.mg-advert > div[class*="loader"]
-dzen.ru#?#div[aria-label="Лента Дзена"] article.card-wrapper:has(div[class^="feed-single-desktop-floors-"])
 dzen.ru##.news-app__content div[class*="__column_myTarget mg-grid__item"] div[class*="__loader "]
 !
 [$path=/pogoda]dzen.ru##.adv_type_rtb
@@ -1004,6 +1009,7 @@ mail.ru#$?#div[slot="main-column"] > *:has(*:matches-css(height:90px)) { remove:
 !
 [$path]mail.ru#%#//scriptlet('json-prune', '[].slot')
 !
+my.mail.ru##.promo-frame-wrap
 my.mail.ru##.l-music__banner-728x90
 my.mail.ru##.sp-video__billboard
 my.mail.ru#%#//scriptlet('set-constant', 'Object.prototype.isAdblockEnable', 'noopFunc')
@@ -1476,6 +1482,7 @@ yandex.*#?#.business-card-title-view__actions > div.business-card-title-view__ad
 ||yandex-pogoda.static-storage.net/*/*/*$script,replace=/adblock//
 !
 ! Yandex.Market
+market.yandex.*##div[id="/content/header/headerPromo"]
 market.yandex.*###banner-streamer
 market.yandex.*##div[data-apiary-widget-name*="@marketfront/HeroBanner"]
 market.yandex.*##div[data-apiary-widget-id*="/headerPromo"]

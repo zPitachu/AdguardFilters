@@ -13,6 +13,17 @@
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
 !
+! https://github.com/uBlockOrigin/uAssets/issues/25365
+@@||sdk.privacy-center.org^$domain=24sata.hr
+! https://github.com/AdguardTeam/AdguardFilters/issues/188709
+linternasport.es,sportlampa.at,sportlampa.si,sportlampa.sk,sportlampa.hu,sportlampa.com,sportlampa.cz#@#.cookie-alert
+! https://github.com/AdguardTeam/AdguardFilters/issues/188916
+ejot.*#@##cookieLayer
+ejot.*#@#.cookie-popup:not(body):not(html)
+! https://github.com/AdguardTeam/AdguardFilters/issues/188931
+muzyka.sklep.pl#@#.cookie-modal
+! https://github.com/AdguardTeam/AdguardFilters/issues/188823
+unka.bilecik.edu.tr#@##cookieConsent
 ! https://github.com/AdguardTeam/AdguardFilters/issues/188139
 @@||cdn.privacy-mgmt.com^$domain=nowtv.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/188609
